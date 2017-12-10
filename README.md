@@ -56,11 +56,11 @@ $ yarn run test:tdd
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://bitbucket.org/ralfting/references-project/src/1c1090f404f2769a7af8b7c20cb121a520c11794/CONTRIBUTING.md?at=master&fileviewer=file-view-default) for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](#).
 
 ## Authors
 
