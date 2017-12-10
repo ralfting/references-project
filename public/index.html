@@ -10,10 +10,13 @@
 </head>
 <body class="bg-grey-lightest">
   <div class="flex flex-wrap w-full p-6 mb-8 bg-black">
-    <div class="container mx-auto">
-      <h1 class="text-white text-xl">
+    <div class="container mx-auto flex items-center">
+      <h1 class="w-1/4 text-white text-xl">
         References Project
       </h1>
+      <div class="w-3/4 text-right">
+        <button class="rounded py-2 px-3 bg-green hover:bg-green-dark text-white text-sm">Create a New Study Tree </button>
+      </div>
     </div>
   </div>
 
@@ -22,7 +25,7 @@
       <div class="w-1/4">
         <div class="mb- flex flex-wrap mb-6">
             <label for="search" class="w-full mb-1 text-base font-normal text-blue">Search</label>
-            <input id="search" type="text" placeholder="Search anything..."
+            <input id="search" type="text" placeholder="Search a study tree..."
                    class="w-full search mb-2"
             />
             <button class="w-full btn btn-dark-blue">
@@ -31,7 +34,7 @@
             </button>
         </div>
 
-        <h3 class="mb-2 font-normal text-base text-blue">Recents Tree</h3>
+        <h3 class="mb-2 font-normal text-base text-blue">Recents Study Tree</h3>
         <ul class="list-reset m-px border rounded">
           <li class="hover:bg-grey-lighter">
             <a href="#" class="p-4 block text-black font-light no-underline hover:text-blue-dark">
