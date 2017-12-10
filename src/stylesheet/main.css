@@ -20,3 +20,8 @@
 .btn-dark-blue:hover {
   @apply .bg-blue-dark .text-white .border-transparent;
 }
+
+
+.hover\:border-l-4:hover {
+  border-left-width: 4px;
+}
