@@ -25,3 +25,11 @@
 .hover\:border-l-4:hover {
   border-left-width: 4px;
 }
+
+.btn-green {
+  @apply .bg-green .text-white;
+}
+
+.btn-green:hover {
+  @apply .bg-green-dark;
+}
