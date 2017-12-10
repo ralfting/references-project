@@ -33,3 +33,7 @@
 .btn-green:hover {
   @apply .bg-green-dark;
 }
+
+.hover\:shadow-md:hover {
+  @apply .shadow;
+}
