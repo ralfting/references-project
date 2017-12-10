@@ -1,2 +1,39 @@
 @tailwind preflight;
 @tailwind utilities;
+
+*:focus {
+  outline:0;
+}
+
+.search {
+  @apply .border .rounded .py-2 .pr-4 .pl-4 .mx-px .bg-white .appearance-none .text-xs;
+}
+
+.btn {
+  @apply .rounded .py-2 .px-4 .font-light .text-xs;
+}
+
+.btn-dark-blue {
+  @apply .border .text-white .border-blue .bg-blue;
+}
+
+.btn-dark-blue:hover {
+  @apply .bg-blue-dark .text-white .border-transparent;
+}
+
+
+.hover\:border-l-4:hover {
+  border-left-width: 4px;
+}
+
+.btn-green {
+  @apply .bg-green .text-white;
+}
+
+.btn-green:hover {
+  @apply .bg-green-dark;
+}
+
+.hover\:shadow-md:hover {
+  @apply .shadow;
+}

@@ -176,5 +176,5 @@ typings/
 .env
 
 # build files
-./public/styles.css
-./public/build.js
+public/build.js
+public/styles.css

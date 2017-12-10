@@ -4,19 +4,257 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>References Project</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
   <link rel="stylesheet" href="./styles.css">
 </head>
-<body>
-  <div class="container mx-auto">
-    <div class="flex h-screen items-center">
-        <div class="flex items-center justify-center w-1/3 h-12 bg-grey hover:bg-white">
-          <p class="text-white hover:text-black">teste</p>
-        </div>
-        <div class="flex items-center justify-center w-2/3 h-12 bg-red hover:bg-white">
-          <p class="text-white hover:text-black">teste</p>
-        </div>
+<body class="bg-grey-lightest">
+  <div class="flex flex-wrap w-full p-6 mb-8 bg-black">
+    <div class="container mx-auto flex items-center">
+      <h1 class="w-1/4 text-white text-xl">
+        References Project
+      </h1>
+      <div class="w-3/4 text-right">
+        <a href="#" class="rounded py-2 px-3 btn btn-green no-underline">Create a New Study Tree </a>
+      </div>
     </div>
+  </div>
+
+  <div class="container mx-auto">
+    <div class="flex flex-wrap">
+      <div class="w-1/4">
+        <div class="mb- flex flex-wrap mb-6">
+            <label for="search" class="w-full mb-1 text-base font-normal text-blue">Search</label>
+            <input id="search" type="text" placeholder="Search a study tree..."
+                   class="w-full search mb-2"
+            />
+            <button class="w-full btn btn-dark-blue">
+              <i class="fa fa-search" aria-hidden="true"></i>
+              Search
+            </button>
+        </div>
+
+        <h3 class="mb-2 font-normal text-base text-blue">Recents Study Tree</h3>
+        <ul class="list-reset m-px border rounded">
+          <li class="hover:bg-grey-lighter">
+            <a href="#" class="p-4 block text-black font-light no-underline hover:text-blue-dark">
+              Promises Javascript
+              <i class="fa fa-external-link float-right" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="hover:bg-grey-lighter">
+            <a href="#" class="p-4 block text-black font-light no-underline hover:text-blue-dark">
+              Lógica para jogos digitais
+              <i class="fa fa-external-link float-right" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="hover:bg-grey-lighter">
+            <a href="#" class="p-4 block text-black font-light no-underline hover:text-blue-dark">
+              Desgin Pattern PHP 7
+              <i class="fa fa-external-link float-right" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="hover:bg-grey-lighter">
+            <a href="#" class="p-4 block text-black font-light no-underline hover:text-blue-dark">
+              TDD com React Native
+              <i class="fa fa-external-link float-right" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+      <div class="w-3/4 pl-8">
+
+        <div class="hidden">
+          <h2 class="mb-3 text-4xl font-light text-blue-dark">The last Study Tree</h2>
+          <a href="" class="no-underline">
+            <div class="w-full lg:flex mb-4 hover:shadow-md">
+              <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url('https://tailwindcss.com/img/card-left.jpg')" title="Woman holding a mug">
+              </div>
+              <div class="border-r border-b border-l border-grey-light lg:border-l-0 lg:border-t lg:border-grey-light bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+                <div class="mb-8">
+                  <div class="text-black font-bold text-xl mb-2">Can coffee make you a better developer?</div>
+                  <p class="text-grey-darker text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</p>
+                </div>
+                <div class="flex items-center">
+                  <img class="w-10 h-10 rounded-full mr-4" src="https://pbs.twimg.com/profile_images/885868801232961537/b1F6H4KC_400x400.jpg" alt="Avatar of Jonathan Reinink">
+                  <div class="text-sm">
+                    <p class="text-black leading-none">Jonathan Reinink</p>
+                    <p class="text-grey-dark">Aug 18</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="" class="no-underline">
+              <div class="w-full lg:flex mb-4 hover:shadow-md">
+                <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url('https://tailwindcss.com/img/card-left.jpg')" title="Woman holding a mug">
+                </div>
+                <div class="border-r border-b border-l border-grey-light lg:border-l-0 lg:border-t lg:border-grey-light bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+                  <div class="mb-8">
+                    <div class="text-black font-bold text-xl mb-2">Can coffee make you a better developer?</div>
+                    <p class="text-grey-darker text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</p>
+                  </div>
+                  <div class="flex items-center">
+                    <img class="w-10 h-10 rounded-full mr-4" src="https://pbs.twimg.com/profile_images/885868801232961537/b1F6H4KC_400x400.jpg" alt="Avatar of Jonathan Reinink">
+                    <div class="text-sm">
+                      <p class="text-black leading-none">Jonathan Reinink</p>
+                      <p class="text-grey-dark">Aug 18</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a href="" class="no-underline">
+                <div class="w-full lg:flex mb-4 hover:shadow-md">
+                  <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url('https://tailwindcss.com/img/card-left.jpg')" title="Woman holding a mug">
+                  </div>
+                  <div class="border-r border-b border-l border-grey-light lg:border-l-0 lg:border-t lg:border-grey-light bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+                    <div class="mb-8">
+                      <div class="text-black font-bold text-xl mb-2">Can coffee make you a better developer?</div>
+                      <p class="text-grey-darker text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</p>
+                    </div>
+                    <div class="flex items-center">
+                      <img class="w-10 h-10 rounded-full mr-4" src="https://pbs.twimg.com/profile_images/885868801232961537/b1F6H4KC_400x400.jpg" alt="Avatar of Jonathan Reinink">
+                      <div class="text-sm">
+                        <p class="text-black leading-none">Jonathan Reinink</p>
+                        <p class="text-grey-dark">Aug 18</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+        </div>
+
+        <div class="hidden">
+          <h2 class="mb-3 text-4xl font-light text-blue-dark">New Study Tree</h2>
+          <p class="text-grey-dark font-light mb-8">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+          </p>
+
+          <div class="bg-grey-lighter p-4 shadow-md border">
+            <div class="w-full">
+              <label for="title">
+                Your Title
+                <i class="fa fa-circle text-xs text-red-lighter" title="Required" aria-hidden="true"></i>
+              </label>
+              <input id="title" type="text" class="w-full py-2 px-2 mt-2 mb-4 border rounded bg-white" placeholder="type your title of study tree...">
+            </div>
+            <div class="w-full">
+              <label for="title">
+                Your Cover Image
+              </label>
+              <input type="file" class="w-full py-2 px-2 mt-2 mb-4 border rounded bg-white" id="">
+            </div>
+            <div class="w-full">
+              <label for="description">
+                Your Description
+              </label>
+              <textarea class="w-full mt-2 border rounded p-2" id="description" rows="10" placeholder="What is goal of this Study Tree"></textarea>
+            </div>
+            <div class="w-full text-right mt-2">
+              <button class="rounded py-2 px-3 btn bg-red-light hover:bg-red text-white">cancel</button>
+              <button class="rounded py-2 px-3 btn btn-green">Create Study Tree</button>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <h2 class="mb-3 text-4xl font-light text-blue-dark">Promises em Javascript</h2>
+          <img src="https://st2.cannypic.com/thumbs/37/376591_632_canny_pic.jpg" alt="Title" class="mb-6" width="100%">
+          <p class="text-grey-dark font-light mb-8">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+          </p>
+
+          <div class="mb-4 flex justify-between items-center">
+            <h3 class="text-xl font-normal">
+              References<br/>
+              <span class="text-xs">2 links of references</span>
+            </h3>
+            <input class="search" placeholder="Search a specific link" type="text">
+          </div>
+
+          <div class="-mt-px flex items-center border-b border-l border-r border-t p-4 bg-grey-lighter hover:border-l-4">
+            <div class="w-5/6">
+              <h3 class="mb-1 font-light">Medium Post about Javascript - <span class="font-light text-blue-dark">by Eliott</span></h3>
+              <p class="mb-4 text-grey-dark font-light text-sm">10/03/2017</p>
+              <a href="#" class="no-underline">
+                <i class="fa fa-link" aria-hidden="true"></i>
+                https://medium.freecodecamp.org/simple-react-testing-d9e25ec87e2
+              </a>
+            </div>
+            <div class="w-1/6 text-center class="no-underline"">
+              <a href="#" class="no-underline text-black hover:text-blue">
+                  <i class="fa fa-share block" aria-hidden="true"></i>
+                  Go!
+                </a>
+            </div>
+          </div>
+
+          <div class=" -mt-px flex items-center border-b border-l border-r border-t p-4 bg-grey-lighter hover:border-l-4">
+              <div class="w-5/6">
+                <h3 class="mb-1 font-light">Medium Post about Javascript - <span class="font-light text-blue-dark">by Eliott</span></h3>
+                <p class="mb-4 text-grey-dark font-light text-sm">10/03/2017</p>
+                <a href="#" class="no-underline">
+                  <i class="fa fa-link" aria-hidden="true"></i>
+                  https://medium.freecodecamp.org/simple-react-testing-d9e25ec87e2
+                </a>
+              </div>
+              <div class="w-1/6 text-center class="no-underline"">
+                <a href="#" class="no-underline text-black hover:text-blue">
+                    <i class="fa fa-share block" aria-hidden="true"></i>
+                    Go!
+                  </a>
+              </div>
+            </div>
+
+          <div class="-mt-px flex flex-wrap items-center border-b border-l border-r border-t p-4 bg-grey-lighter">
+            <a href="#" class="w-full no-underline">
+              <h3 class="flex justify-between items-center w-full font-light mb-4 font-light text-blue">
+                Add new link
+              </h3>
+            </a>
+            <div class="w-full py-1">
+              <label for="title">
+                Your title
+                <i class="fa fa-circle text-xs text-red-lighter" title="Required" aria-hidden="true"></i>
+              </label>
+              <input type="text" class="w-full mb-1 mr-1 py-2 px-2 border rounded" placeholder="What this link teach me...">
+            </div>
+            <div class="w-full py-1">
+                <label for="title">
+                  Link of post
+                  <i class="fa fa-circle text-xs text-red-lighter" title="Required" aria-hidden="true"></i>
+                </label>
+                <input type="text" class="w-full mb-1 mr-1 py-2 px-2 border rounded" placeholder="https://awesome-link.com">
+              </div>
+            <div class="w-full py-1">
+              <label for="title">
+                Author of post
+              </label>
+              <input type="text" class="w-full mb-1 mr-1 py-2 px-2 border rounded" placeholder="Optional">
+            </div>
+            <div class="w-full py-1">
+              <label for="title">
+                Date of post
+              </label>
+              <input type="text" class="w-full mb-1 mr-1 py-2 px-2 border rounded" placeholder="Optional">
+            </div>
+
+            <div class="w-full text-right mt-2">
+              <button class="rounded py-2 px-3 btn bg-red-light hover:bg-red text-white">cancel</button>
+              <button class="rounded py-2 px-3 btn btn-green">Create a New Study Tree</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mx-auto mt-8">
+    <p class="text-center text-sm text-blue-dark border-t py-4">
+        References Project · Created by <a class="no-underline" href="https://github.com/ralfting" target="_blank">Ralph Effting</a>
+    </p>
   </div>
   <script src="./build.js"></script>
 </body>
