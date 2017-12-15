@@ -1,7 +1,7 @@
 {
   "name": "references-project",
   "version": "1.0.0",
-  "description": "",
+  "description": "A tool to control your order of study about anything",
   "main": "index.js",
   "scripts": {
     "lint": "./node_modules/.bin/eslint src/*.js",
