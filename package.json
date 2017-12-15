@@ -8,10 +8,23 @@
     "prepush": "npm run lint",
     "test": "./node_modules/.bin/mocha tests/**/*.spec.js --require babel-register ",
     "test:tdd": "./node_modules/.bin/mocha tests/**/*.spec.js --require babel-register --watch",
+    "test:coverage": "nyc npm run test",
     "dev": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=webpack.config.js",
     "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=webpack.config.js",
     "prod": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=webpack.config.js",
     "start": "./node_modules/.bin/webpack-dev-server --open"
+  },
+  "nyc": {
+    "check-coverage": true,
+    "functions": 80,
+    "lines": 80,
+    "reporter": [
+      "text",
+      "html"
+    ],
+    "exclude": [
+      "tests/**"
+    ]
   },
   "repository": {
     "type": "git",
@@ -41,6 +54,7 @@
     "extract-text-webpack-plugin": "^3.0.2",
     "husky": "^0.14.3",
     "mocha": "^4.0.1",
+    "nyc": "^11.3.0",
     "postcss-loader": "^2.0.9",
     "style-loader": "^0.19.0",
     "webpack": "^3.10.0",
