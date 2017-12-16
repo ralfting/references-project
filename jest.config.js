@@ -25,4 +25,8 @@ module.exports = {
       statements: -10,
     },
   },
+  setupFiles: [
+    './src/javascript/shim.js',
+    './src/javascript/setupTest.js',
+  ],
 };
