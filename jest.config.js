@@ -14,6 +14,9 @@ module.exports = {
     'js',
     'jsx',
   ],
+  reporters: [
+    'jest-dot-reporter',
+  ],
   coverageThreshold: {
     global: {
       branches: 80,

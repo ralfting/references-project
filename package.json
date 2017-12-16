@@ -47,6 +47,7 @@
     "extract-text-webpack-plugin": "^3.0.2",
     "husky": "^0.14.3",
     "jest": "^21.2.1",
+    "jest-dot-reporter": "^1.0.3",
     "jsdom": "^11.5.1",
     "jsdom-global": "^3.0.2",
     "postcss-loader": "^2.0.9",
