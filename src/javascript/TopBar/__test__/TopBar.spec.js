@@ -2,7 +2,7 @@ import 'jsdom-global/register';
 import React from 'react';
 import { expect } from 'chai';
 import { mount } from 'enzyme';
-import TopBar from '../../src/javascript/TopBar.jsx';
+import TopBar from '../index';
 
 describe('TopBar', () => {
   let props;
@@ -13,7 +13,7 @@ describe('TopBar', () => {
       mountedTopBarScreen = mount(<TopBar />);
     }
     return mountedTopBarScreen;
-  }
+  };
 
   beforeEach(() => {
     props = {
