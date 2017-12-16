@@ -6,31 +6,13 @@
   "scripts": {
     "lint": "./node_modules/.bin/eslint src/*.js",
     "prepush": "npm run lint",
-    "test": "./node_modules/.bin/mocha **/__test__/*.spec.js --require babel-register --require ./test/setup.js",
-    "test:tdd": "./node_modules/.bin/mocha **/__test__/*.spec.js --require babel-register --require ./test/setup.js --watch",
-    "test:coverage": "nyc npm run test",
+    "test": "./node_modules/.bin/jest",
+    "test:tdd": "./node_modules/.bin/jest --watchAll",
+    "test:coverage": "./node_modules/.bin/jest --coverage",
     "dev": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=webpack.config.js",
     "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=webpack.config.js",
     "prod": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=webpack.config.js",
     "start": "./node_modules/.bin/webpack-dev-server --open"
-  },
-  "nyc": {
-    "check-coverage": true,
-    "functions": 80,
-    "lines": 80,
-    "reporter": [
-      "text",
-      "html"
-    ],
-    "exclude": [
-      "tests/specs/**",
-      "tests/setup.js"
-    ],
-    "extension": [
-      ".jsx",
-      ".js"
-    ],
-    "sourceMap": true
   },
   "repository": {
     "type": "git",
@@ -45,11 +27,13 @@
     "url": "https://github.com/ralph-learning/references-project/issues"
   },
   "devDependencies": {
+    "babel-jest": "^21.2.0",
     "babel-loader": "^7.1.2",
+    "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "babel-register": "^6.26.0",
-    "chai": "^4.1.2",
     "cross-env": "^5.1.1",
     "css-loader": "^0.28.7",
     "enzyme": "^3.2.0",
@@ -65,8 +49,6 @@
     "jest": "^21.2.1",
     "jsdom": "^11.5.1",
     "jsdom-global": "^3.0.2",
-    "mocha": "^4.0.1",
-    "nyc": "^11.3.0",
     "postcss-loader": "^2.0.9",
     "style-loader": "^0.19.0",
     "webpack": "^3.10.0",

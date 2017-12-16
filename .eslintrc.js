@@ -9,6 +9,7 @@ module.exports = {
     describe: true,
     it: true,
     document: true,
+    expect: true,
   },
   rules: {
     'react/jsx-filename-extension': [1, {
