@@ -1,6 +1,5 @@
 module.exports = {
   verbose: true,
-  // collectCoverage: true,
   coveragePathIgnorePatterns: [
     '/node_modules/',
     '/__tests__/',
@@ -15,4 +14,12 @@ module.exports = {
     'js',
     'jsx',
   ],
+  coverageThreshold: {
+    global: {
+      branches: 80,
+      functions: 80,
+      lines: 80,
+      statements: -10,
+    },
+  },
 };
