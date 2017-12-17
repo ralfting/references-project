@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "./node_modules/.bin/eslint src/*.js",
-    "prepush": "npm run lint",
+    "prepush": "yarn run lint && yarn run test:coverage",
     "test": "./node_modules/.bin/jest",
     "test:tdd": "./node_modules/.bin/jest --watchAll",
     "test:coverage": "./node_modules/.bin/jest --coverage",
