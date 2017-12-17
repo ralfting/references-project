@@ -29,9 +29,14 @@ describe('SearchInput', () => {
       const wrapper = shallow(<SearchInput />);
       expect(wrapper.find('button').length).toEqual(1);
     });
+
+    it('should called search() when button is clicked', () => {
+      const wrapper = mount(<SearchInput />);
+      const button = wrapper.find('button');
+      const spy = jest.spyOn(wrapper.instance(), 'search');
+
+      button.simulate('click');
+      expect(spy).toHaveBeenCalled();
+    });
   });
-
-
-  // Deve receber um valor no input e armazenar no state 'query' cada vez que é alterado
-  // Deve  ter um botão para disparar a busca para um console.log('Aqui vai o evento para popular a lista de resultados')
 });

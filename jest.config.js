@@ -8,9 +8,6 @@ module.exports = {
   ],
   collectCoverageFrom: [
     '**/**/*.jsx',
-    '/test/**',
-    '!**/node_modules/**',
-    '!/src/javscript/App.jsx',
   ],
   moduleFileExtensions: [
     'js',
