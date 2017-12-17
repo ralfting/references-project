@@ -4,11 +4,13 @@ module.exports = {
     '/node_modules/',
     '/__tests__/',
     'jest.mockBase.js',
+    'App.jsx',
   ],
   collectCoverageFrom: [
     '**/**/*.jsx',
     '/test/**',
     '!**/node_modules/**',
+    '!/src/javscript/App.jsx',
   ],
   moduleFileExtensions: [
     'js',
