@@ -3,6 +3,10 @@ import PropTypes from 'prop-types';
 
 import BaseLink from '../Base/BaseButton';
 
+const propTypes = {
+  title: PropTypes.string.isRequired,
+};
+
 class TopBar extends Component {
   constructor(props) {
     super(props);
@@ -31,10 +35,6 @@ class TopBar extends Component {
     );
   }
 }
-
-const propTypes = {
-  title: PropTypes.string.isRequired,
-};
 
 TopBar.propTypes = propTypes;
 
